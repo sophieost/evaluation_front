@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+/* fonts : arial
+        "Roboto Slab", serif; */
+
+/* colors : Rouge :#e74c3c
+Bouton rouge hover : #b83e30
+Fond icones : rgb(71, 71, 71) / couleurs #fff
+Bouton blanc : fond #fff / couleur #e74c3c
+Bouton blanc hover : fond rgb(144, 144, 144) / couleur #fff */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1 {
+    color: white;
+    font-family: "Roboto Slab", serif;
+}
+
+h2 {
+    color: #e74c3c;
+    font-family: "Roboto Slab", serif;
+    position: relative;
+    text-align: center;
+
+    &::after {
+        content: "";
+        width: 120px;
+        height: 0.7px;
+        background-color: #e74c3c;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 10px;
+    }
+}
+
+
+h5 {
+    color: #e74c3c !important;
+    font-family: "Roboto Slab", serif;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+nav {
+    height: 10vh;
+    background-color: rgb(24, 24, 24);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+
+    .accHeader {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        min-height: 90vh;
+        background: url(../img/hero-image.jpg) center/cover;
+
+        h1 {
+            width: 50%;
+            margin: 0 auto;
+        }
+
+        p {
+            width: 70%;
+            margin: 0 auto;
+            padding: 3rem;
+        }
+
+        button {
+            width: 150px;
+            padding: 10px 20px;
+            background-color: #e74c3c;
+            color: white;
+            border: none;
+            border-radius: 10px;
+
+        }
+
+        button:hover {
+            background-color: #b83e30;
+        }
+
+    }
+
+    .whoHeader {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        min-height: 90vh;
+        background: url(../img/hero-image.jpg) center/cover;
+    }
+
+    .contactHeader {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        min-height: 90vh;
+        background: url(../img/hero-image.jpg) center/cover;
+
+        button {
+            width: 150px;
+            padding: 10px 20px;
+            background-color: #e74c3c;
+            color: white;
+            border: none;
+            border-radius: 10px;
+
+        }
+
+        button:hover {
+            background-color: #b83e30;
+        }
+
+
+    }
+
+
+
+}
+
+main {
+    .section1acc {
+        width: 70%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        span {
+            color: #e74c3c;
+        }
+    }
+
+    .section2acc {
+
+        .card-group {
+            width: 70%;
+            margin: 0 auto;
+
+            .card {
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+
+                .icon {
+                    background-color: rgb(71, 71, 71);
+                    width: 80px;
+                    height: 80px;
+                    margin: 10px auto;
+                    border-radius: 150px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .card-body {
+
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+
+
+
+                    button {
+                        width: 180px;
+                        margin: 0 auto;
+                        background: white;
+                        border: 1px solid rgba(0, 0, 0, 0.493);
+                        border-radius: 5px;
+
+                        a {
+                            color: #e74c3c;
+                        }
+                    }
+
+                    button:hover {
+                        background: rgb(144, 144, 144);
+                        color: white;
+                    }
+                }
+
+            }
+
+
+        }
+
+    }
+}
+
+/* ************ WHO WE ARE *************** */
+.team {
+
+
+    #joanne {
+        background: url(../img/joanne.jpg) center/cover;
+    }
+
+    #gaston {
+        background: url(../img/gaston.jpg) center/cover;
+    }
+
+    #manuel {
+        background: url(../img/manuel.jpg) center/cover;
+    }
+
+    #tracy {
+        background: url(../img/tracy.jpg) center/cover;
+    }
+
+    .hide {
+        background-color: white;
+        height: 500px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: 0.4s ease;
+    }
+
+
+}
+.imgHover:hover>.job{
+    color: white !important;
+}
+.profil {
+    height: 500px;
+    padding: 0;
+    margin: 0;
+    transition: 0.5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sponsors {
+    button {
+        width: 250px;
+        display: block;
+        margin: 0 auto;
+        padding: 10px 20px;
+        background-color: #e74c3c;
+        color: white;
+        border: none;
+        border-radius: 10px;
+
+    }
+
+    button:hover {
+        background-color: #b83e30;
+    }
+}
+
+
+/* ****************  CONTACT  *************** */
+
+form {
+
+    input[type="submit"] {
+        width: 150px;
+        display: block;
+        margin: 0 auto;
+        padding: 10px 20px;
+        background-color: #e74c3c;
+        color: white;
+        border: none;
+        border-radius: 10px;
+
+        &:hover {
+            background-color: #b83e30;
+        }
+    }
+
+}
+
+.errorInput {
+    border: 1px solid rgba(161, 2, 2, 0.527);
+}
+
+.errorMessage {
+    color: red;
+}
+
+.valid{
+    border: 1px solid rgba(14, 142, 14, 0.653);
+}
+
+
+/* **************  FOOTER  ****************** */
+footer{
+    background-color: #e74c3c;
+    height: 30vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: end;
+
+
+}
+
+/* ************  MEDIAQUERIES  *************** */
+
+@media screen and (max-width: 990px){
+.card-group{
+    display: block;
+}
+
+}
